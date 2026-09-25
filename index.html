@@ -15,7 +15,7 @@
         <!-- Üst Kısım: Marka Amblemi & Instagram Sayfası -->
         <div class="pt-6 flex flex-col sm:flex-row items-center gap-4">
             <!-- Marka Amblem/Logo Alanı -->
-            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-amber-500/80 shadow-lg bg-stone-950 p-1 flex items-center justify-center flex-shrink-0">
+            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-amber-500/80 shadow-lg bg-stone-950 p-1 flex items-center justify-center flex-shrink-0 cursor-pointer" onclick="openModal('Logo.jpeg')">
                 <img src="Logo.jpeg" alt="İmalathane Anadolu Logo" class="w-full h-full object-cover rounded-full">
             </div>
 
@@ -69,7 +69,7 @@
     <section id="urunler" class="max-w-6xl mx-auto px-4 py-16">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-stone-100">Özel Tasarım Ürünlerimiz</h2>
-            <p class="text-stone-400 mt-2">Çocuklarınızın fiziksel ve zihinsel gelişimini destekleyen el yapımı ahşap tasarımlar.</p>
+            <p class="text-stone-400 mt-2">Büyütmek için resimlerin üzerine tıklayabilirsiniz.</p>
         </div>
 
         <!-- Ürün Kartları Grid -->
@@ -78,8 +78,11 @@
             <!-- 1. ÜRÜN: Mega Raket Seti -->
             <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
                 <div>
-                    <div class="h-80 overflow-hidden bg-stone-700">
-                        <img src="megaraket.jpeg" alt="Mega Raket Seti" class="w-full h-full object-cover">
+                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('megaraket.jpeg')">
+                        <img src="megaraket.jpeg" alt="Mega Raket Seti" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
+                        </div>
                     </div>
                     <div class="p-6">
                         <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Eğlenceli Oyun Seti</span>
@@ -108,8 +111,11 @@
             <!-- 2. ÜRÜN: Pinokyo Kukla Seti -->
             <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
                 <div>
-                    <div class="h-80 overflow-hidden bg-stone-700">
-                        <img src="pinokyo.jpeg" alt="Pinokyo Kukla Seti" class="w-full h-full object-cover">
+                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('pinokyo.jpeg')">
+                        <img src="pinokyo.jpeg" alt="Pinokyo Kukla Seti" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
+                        </div>
                     </div>
                     <div class="p-6">
                         <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Yaratıcı Tasarım</span>
@@ -120,7 +126,7 @@
                         <ul class="mt-4 space-y-2 text-stone-300 text-sm">
                             <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Hareketli Ahşap Gövde Ve Eklemler</li>
                             <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> %100 El Emeği & Doğal Malzeme</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Eğlenceli İnteraktif Oyun ( Burun Düşürme ) Mekanizması</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Eğlenceli İnteraktif Oyun Mekanizması</li>
                         </ul>
                     </div>
                 </div>
@@ -138,8 +144,11 @@
             <!-- 3. ÜRÜN: Duvar Tipi Tırmanma Barı -->
             <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
                 <div>
-                    <div class="h-80 overflow-hidden bg-stone-700">
-                        <img src="duvartipi.jpeg" alt="Duvar Tipi Tırmanma Barı" class="w-full h-full object-cover">
+                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('duvartipi.jpeg')">
+                        <img src="duvartipi.jpeg" alt="Duvar Tipi Tırmanma Barı" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
+                        </div>
                     </div>
                     <div class="p-6">
                         <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Fiziksel Gelişim</span>
@@ -149,7 +158,7 @@
                         </p>
                         <ul class="mt-4 space-y-2 text-stone-300 text-sm">
                             <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Ayarlanabilir Yükseklik Seviyeleri</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Evin Her Bölgesinde Kullanım İmkanı</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dahili Jimnastik Halkaları</li>
                             <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Yüksek Taşıma Kapasitesi</li>
                         </ul>
                     </div>
@@ -168,8 +177,11 @@
             <!-- 4. ÜRÜN: Barfiks Tipi Tırmanma İstasyonu -->
             <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
                 <div>
-                    <div class="h-80 overflow-hidden bg-stone-700">
-                        <img src="barfikstipi.jpeg" alt="Barfiks Tipi Tırmanma İstasyonu" class="w-full h-full object-cover">
+                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('barfikstipi.jpeg')">
+                        <img src="barfikstipi.jpeg" alt="Barfiks Tipi Tırmanma İstasyonu" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
+                        </div>
                     </div>
                     <div class="p-6">
                         <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Pro Spor & Tırmanma</span>
@@ -178,9 +190,9 @@
                             Ahşap ve metal kombinasyonuyla üretilmiş, hem çocuklar hem de yetişkinler için uygun çok işlevli tırmanma ve spor istasyonu.
                         </p>
                         <ul class="mt-4 space-y-2 text-stone-300 text-sm">
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dayanıklı Ahşap (40 kg) & Metal İskelet ( 90 Kg )</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dayanıklı Ahşap & Metal İskelet</li>
                             <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Entegre Barfiks Barı ve Bank Standı</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Hem Yetişkin Hem Çocuk Kullanım İmkanı</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Ev İçi Profesyonel Egzersiz Altyapısı</li>
                         </ul>
                     </div>
                 </div>
@@ -198,10 +210,32 @@
         </div>
     </section>
 
+    <!-- RESİM BÜYÜTME PENCERESİ (MODAL) -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+        <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer hover:text-amber-500 font-bold p-2">&times;</span>
+        <img id="modalImage" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" src="" alt="Büyütülmüş Ürün Görseli">
+    </div>
+
     <!-- FOOTER -->
     <footer class="text-center py-8 text-stone-500 text-sm border-t border-stone-800">
         <p>&copy; 2026 İmalathane Anadolu. Tüm Hakları Saklıdır.</p>
     </footer>
 
+    <!-- RESİM PENCERESİ JAVASCRIPT KODU -->
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = imageSrc;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
