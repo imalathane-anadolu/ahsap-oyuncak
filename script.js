@@ -2,39 +2,24 @@
 const products = [
   {
     id: 1,
-    name: "Doğal Ahşap Araba",
+    name: "El Yapımı Ahşap Oyuncak",
     price: "450 TL",
-    image: "images/araba.jpg",
-    description: "Tamamen doğal kayın ağacından üretilmiştir. Toksik boya içermez.",
-    shopierUrl: "#" // Yarın buraya Shopier linki gelecek (ör: https://www.shopier.com/ShowProduct3?id=123456)
-  },
-  {
-    id: 2,
-    name: "Ahşap Denge Kulesi",
-    price: "350 TL",
-    image: "images/kule.jpg",
-    description: "Çocukların motor becerilerini ve odaklanmasını geliştirir.",
-    shopierUrl: "#" // Yarın buraya Shopier linki gelecek
-  },
-  {
-    id: 3,
-    name: "Ahşap Hayvan Figürleri Seti",
-    price: "600 TL",
-    image: "images/figur.jpg",
-    description: "Pürüzsüz zımparalanmış, el yapımı 5'li ahşap hayvan seti.",
-    shopierUrl: "#" // Yarın buraya Shopier linki gelecek
+    image: "IMG_0133.jpg",
+    description: "Tamamen doğal kayın ağacından üretilmiştir. Kimyasal veya toksik madde içermez, çocuklar için tamamen güvenlidir.",
+    shopierUrl: "#" // Yarın Shopier linkini buraya yapıştıracağız
   }
 ];
 
 // Ürünleri Ekrana Basan Fonksiyon
 function renderProducts() {
   const container = document.getElementById('product-list');
+  if (!container) return;
   container.innerHTML = '';
 
   products.forEach(product => {
     const card = `
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-amber-200 flex flex-col justify-between">
-        <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-amber-200 flex flex-col justify-between max-w-sm mx-auto">
+        <img src="${product.image}" alt="${product.name}" class="w-full h-64 object-cover">
         <div class="p-4 flex-1 flex flex-col justify-between">
           <div>
             <h2 class="text-xl font-bold text-amber-950">${product.name}</h2>
