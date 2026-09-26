@@ -1,207 +1,146 @@
-<!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İmalathane Anadolu | Ahşap & Metal Tasarım</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-stone-900 text-stone-100 font-sans antialiased selection:bg-amber-500 selection:text-white">
-
-    <!-- HERO / GİRİŞ KISMI -->
-    <header class="min-h-screen flex flex-col justify-between items-center px-4 py-8 text-center bg-gradient-to-b from-stone-950 to-stone-900">
-        
-        <!-- Üst Kısım: Marka Amblemi & Instagram Sayfası -->
-        <div class="pt-6 flex flex-col sm:flex-row items-center gap-4">
-            <!-- Marka Amblem/Logo Alanı -->
-            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-amber-500/80 shadow-lg bg-stone-950 p-1 flex items-center justify-center flex-shrink-0 cursor-pointer" onclick="openModal('Logo.jpeg')">
-                <img src="Logo.jpeg" alt="İmalathane Anadolu Logo" class="w-full h-full object-cover rounded-full">
-            </div>
-
-            <!-- Firma İsmi & Instagram Butonu -->
-            <div class="flex flex-col items-center sm:items-start">
-                <h2 class="text-amber-500 font-bold tracking-widest uppercase text-sm sm:text-base mb-1">İmalathane Anadolu</h2>
-                <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="inline-flex items-center gap-2 bg-stone-800/80 hover:bg-stone-800 text-stone-300 hover:text-amber-400 px-3.5 py-1.5 rounded-full border border-stone-700 text-xs sm:text-sm transition">
-                    <i class="fa-brands fa-instagram text-amber-500 text-base"></i>
-                    <span>@imalathane_anadolu</span>
-                </a>
-            </div>
+<!-- PAKETLER VE FİYAT LİSTESİ -->
+    <section id="paketler" class="max-w-6xl mx-auto px-4 pt-12 pb-4">
+        <div class="text-center mb-10">
+            <span class="inline-block bg-amber-500/10 text-amber-500 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full border border-amber-500/20 mb-3">
+                <i class="fa-solid fa-truck-fast mr-1.5"></i> Kargo Dahil & Tüm Ürünlerde Kredi Kartına 3 Taksit İmkanı
+            </span>
+            <h2 class="text-3xl font-bold text-stone-100">Paketlerimiz ve Fiyat Listesi</h2>
+            <p class="text-stone-400 text-sm mt-2">
+                Rakip Firma Kargo Dahil Fiyatları: <span class="line-through text-stone-500">6.000 TL - 9.000 TL</span>
+            </p>
         </div>
 
-        <!-- Orta Kısım: Başlık & Biyografi Maddeleri -->
-        <div class="max-w-2xl my-6">
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-stone-100 tracking-tight mb-6">
-                Ahşap & Metal Tasarım & Üretim
-            </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-            <!-- Öne Çıkan Özellikler -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-lg mx-auto bg-stone-800/40 p-5 rounded-2xl border border-stone-800 backdrop-blur">
-                <div class="flex items-center gap-3 text-stone-300 text-sm">
-                    <i class="fa-solid fa-tree text-amber-500"></i>
-                    <span>Doğal Malzeme & El Emeği</span>
-                </div>
-                <div class="flex items-center gap-3 text-stone-300 text-sm">
-                    <i class="fa-solid fa-shield-halved text-amber-500"></i>
-                    <span>Shopier ile Güvenli Alışveriş</span>
-                </div>
-                <div class="flex items-center gap-3 text-stone-300 text-sm">
-                    <i class="fa-solid fa-compass-drafting text-amber-500"></i>
-                    <span>Özel Ölçü & Sipariş (DM)</span>
-                </div>
-                <div class="flex items-center gap-3 text-stone-300 text-sm">
-                    <i class="fa-solid fa-child text-amber-500"></i>
-                    <span>Çocuklar İçin Güvenli & Eğlenceli</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Alt Kısım: Ürünlere Yönlendirme Butonu -->
-        <div class="pb-6">
-            <a href="#urunler" class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition duration-300 hover:scale-105">
-                <span>Ürünlerimizi İnceleyin</span>
-                <i class="fa-solid fa-arrow-down"></i>
-            </a>
-        </div>
-    </header>
-
-    <!-- ÜRÜNLER KISMI -->
-    <section id="urunler" class="max-w-6xl mx-auto px-4 py-16">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-stone-100">Özel Tasarım Ürünlerimiz</h2>
-            <p class="text-stone-400 mt-2">Büyütmek için resimlerin üzerine tıklayabilirsiniz.</p>
-        </div>
-
-        <!-- Ürün Kartları Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-            <!-- 1. ÜRÜN: Mega Raket Seti -->
-            <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
+            <!-- 1. Standart Paket -->
+            <div class="bg-stone-800 border border-stone-700 rounded-3xl p-6 flex flex-col justify-between hover:border-amber-500/50 transition shadow-xl">
                 <div>
-                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('megaraket.jpeg')">
-                        <img src="megaraket.jpeg" alt="Mega Raket Seti" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
-                        </div>
+                    <h3 class="text-xl font-bold text-stone-100">Standart Paket</h3>
+                    <div class="mt-3 mb-4">
+                        <span class="text-3xl font-extrabold text-amber-500">4.650 TL</span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Eğlenceli Oyun Seti</span>
-                        <h3 class="text-2xl font-bold text-stone-100 mt-3">Mega Raket Seti</h3>
-                        <p class="text-stone-400 text-sm mt-2">
-                            Kapı kasasına kolayca monte edilen, el-göz koordinasyonunu geliştiren ve evde hareket imkanı sunan eğlenceli raket top seti.
-                        </p>
-                        <ul class="mt-4 space-y-2 text-stone-300 text-sm">
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dayanıklı Ahşap Raket ve Halat</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Kolay Kurulum & Güvenli Yapı</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Ev İçi Aktif Oyun Alanı</li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-2 text-stone-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>4 Adet Tırmanma Çubuğu</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="p-6 pt-0 flex items-center justify-between border-t border-stone-700/50 mt-4">
-                    <div>
-                        <span class="text-xs text-stone-400">Fiyat</span>
-                        <p class="text-2xl font-bold text-amber-500">İletişime Geçin</p>
-                    </div>
-                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3 rounded-xl transition">
+                <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between">
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">(Kargo Bizden)</span>
+                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-4 py-2 rounded-xl text-sm transition">
                         Sipariş Ver (DM)
                     </a>
                 </div>
             </div>
 
-            <!-- 2. ÜRÜN: Pinokyo Kukla Seti -->
-            <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
+            <!-- 2. Orta Paket - 1 -->
+            <div class="bg-stone-800 border border-stone-700 rounded-3xl p-6 flex flex-col justify-between hover:border-amber-500/50 transition shadow-xl">
                 <div>
-                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('pinokyo.jpeg')">
-                        <img src="pinokyo.jpeg" alt="Pinokyo Kukla Seti" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
-                        </div>
+                    <h3 class="text-xl font-bold text-stone-100">Orta Paket - 1</h3>
+                    <div class="mt-3 mb-4">
+                        <span class="text-3xl font-extrabold text-amber-500">5.350 TL</span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Yaratıcı Tasarım</span>
-                        <h3 class="text-2xl font-bold text-stone-100 mt-3">Pinokyo Kukla Seti</h3>
-                        <p class="text-stone-400 text-sm mt-2">
-                            Çocukların hayal gücünü harekete geçiren, interaktif ve eğlenceli ahşap Pinokyo kukla ve oyun seti.
-                        </p>
-                        <ul class="mt-4 space-y-2 text-stone-300 text-sm">
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Hareketli Ahşap Gövde Ve Eklemler</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> %100 El Emeği & Doğal Malzeme</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Eğlenceli İnteraktif Oyun Mekanizması</li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-2 text-stone-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>4 Adet Tırmanma Çubuğu</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>Salıncak + Tutunma Halkası</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="p-6 pt-0 flex items-center justify-between border-t border-stone-700/50 mt-4">
-                    <div>
-                        <span class="text-xs text-stone-400">Fiyat</span>
-                        <p class="text-2xl font-bold text-amber-500">İletişime Geçin</p>
-                    </div>
-                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3 rounded-xl transition">
+                <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between">
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">(Kargo Bizden)</span>
+                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-4 py-2 rounded-xl text-sm transition">
                         Sipariş Ver (DM)
                     </a>
                 </div>
             </div>
 
-            <!-- 3. ÜRÜN: Duvar Tipi Tırmanma Barı -->
-            <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
+            <!-- 3. Orta Paket - 2 -->
+            <div class="bg-stone-800 border-2 border-amber-500 rounded-3xl p-6 flex flex-col justify-between hover:border-amber-400 transition shadow-xl relative">
+                <span class="absolute -top-3 right-6 bg-amber-500 text-stone-950 font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Popüler</span>
                 <div>
-                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('duvartipi.jpeg')">
-                        <img src="duvartipi.jpeg" alt="Duvar Tipi Tırmanma Barı" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
-                        </div>
+                    <h3 class="text-xl font-bold text-stone-100">Orta Paket - 2</h3>
+                    <div class="mt-3 mb-4">
+                        <span class="text-3xl font-extrabold text-amber-500">5.350 TL</span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Fiziksel Gelişim</span>
-                        <h3 class="text-2xl font-bold text-stone-100 mt-3">Duvar Tipi Tırmanma Barı</h3>
-                        <p class="text-stone-400 text-sm mt-2">
-                            Ev ortamında çocukların kas ve tırmanma becerilerini geliştiren, jimnastik halkaları eklenmiş ahşap tırmanma modülü.
-                        </p>
-                        <ul class="mt-4 space-y-2 text-stone-300 text-sm">
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Ayarlanabilir Yükseklik Seviyeleri</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dahili Jimnastik Halkaları</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Yüksek Taşıma Kapasitesi</li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-2 text-stone-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>4 Adet Tırmanma Çubuğu</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>Salıncak + Mega Raket-Ahşap Top</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="p-6 pt-0 flex items-center justify-between border-t border-stone-700/50 mt-4">
-                    <div>
-                        <span class="text-xs text-stone-400">Fiyat</span>
-                        <p class="text-2xl font-bold text-amber-500">İletişime Geçin</p>
-                    </div>
-                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3 rounded-xl transition">
+                <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between">
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">(Kargo Bizden)</span>
+                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-4 py-2 rounded-xl text-sm transition">
                         Sipariş Ver (DM)
                     </a>
                 </div>
             </div>
 
-            <!-- 4. ÜRÜN: Barfiks Tipi Tırmanma İstasyonu -->
-            <div class="bg-stone-800 border border-stone-700 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-amber-500/50 transition">
+            <!-- 4. Üst Paket -->
+            <div class="bg-stone-800 border border-stone-700 rounded-3xl p-6 flex flex-col justify-between hover:border-amber-500/50 transition shadow-xl">
                 <div>
-                    <div class="h-96 bg-stone-950 p-4 flex items-center justify-center cursor-pointer relative group" onclick="openModal('barfikstipi.jpeg')">
-                        <img src="barfikstipi.jpeg" alt="Barfiks Tipi Tırmanma İstasyonu" class="max-h-full max-w-full object-contain rounded-xl transition duration-300 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium gap-2">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Büyütmek İçin Tıkla
-                        </div>
+                    <h3 class="text-xl font-bold text-stone-100">Üst Paket</h3>
+                    <div class="mt-3 mb-4">
+                        <span class="text-3xl font-extrabold text-amber-500">6.850 TL</span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full">Pro Spor & Tırmanma</span>
-                        <h3 class="text-2xl font-bold text-stone-100 mt-3">Barfiks Tipi Tırmanma İstasyonu</h3>
-                        <p class="text-stone-400 text-sm mt-2">
-                            Ahşap ve metal kombinasyonuyla üretilmiş, hem çocuklar hem de yetişkinler için uygun çok işlevli tırmanma ve spor istasyonu.
-                        </p>
-                        <ul class="mt-4 space-y-2 text-stone-300 text-sm">
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dayanıklı Ahşap & Metal İskelet</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Entegre Barfiks Barı ve Bank Standı</li>
-                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Ev İçi Profesyonel Egzersiz Altyapısı</li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-2 text-stone-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>4 Adet Tırmanma Çubuğu</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>Salıncak + Pinokyo</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="p-6 pt-0 flex items-center justify-between border-t border-stone-700/50 mt-4">
-                    <div>
-                        <span class="text-xs text-stone-400">Fiyat</span>
-                        <p class="text-2xl font-bold text-amber-500">İletişime Geçin</p>
+                <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between">
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">(Kargo Bizden)</span>
+                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-4 py-2 rounded-xl text-sm transition">
+                        Sipariş Ver (DM)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Mega Paket -->
+            <div class="bg-stone-800 border border-amber-500/50 md:col-span-2 lg:col-span-2 rounded-3xl p-6 flex flex-col justify-between hover:border-amber-500 transition shadow-xl">
+                <div>
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-stone-100">Mega Paket</h3>
+                        <span class="text-xs font-semibold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">En Kapsamlı Set</span>
                     </div>
-                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3 rounded-xl transition">
+                    <div class="mt-3 mb-4">
+                        <span class="text-3xl font-extrabold text-amber-500">7.990 TL</span>
+                    </div>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-stone-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>4 Adet Tırmanma Çubuğu</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>Salıncak + Tutunma Halkası</span>
+                        </li>
+                        <li class="flex items-center gap-2 sm:col-span-2">
+                            <i class="fa-solid fa-check text-amber-500"></i>
+                            <span>Mega Raket + Ahşap Top + Pinokyo</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between">
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">(Kargo Bizden)</span>
+                    <a href="https://instagram.com/imalathane_anadolu" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-2 rounded-xl text-sm transition">
                         Sipariş Ver (DM)
                     </a>
                 </div>
@@ -209,33 +148,3 @@
 
         </div>
     </section>
-
-    <!-- RESİM BÜYÜTME PENCERESİ (MODAL) -->
-    <div id="imageModal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
-        <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer hover:text-amber-500 font-bold p-2">&times;</span>
-        <img id="modalImage" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" src="" alt="Büyütülmüş Ürün Görseli">
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="text-center py-8 text-stone-500 text-sm border-t border-stone-800">
-        <p>&copy; 2026 İmalathane Anadolu. Tüm Hakları Saklıdır.</p>
-    </footer>
-
-    <!-- RESİM PENCERESİ JAVASCRIPT KODU -->
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modalImg.src = imageSrc;
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-        }
-    </script>
-</body>
-</html>
